@@ -24,6 +24,9 @@ scoop = \once \override NoteHead #'stencil = #scoop-stencil
         \time 4/4
         \tempo 2 = 180
         \numericTimeSignature
+        \set Staff.instrumentName = #"Trumpet"
+        \set Staff.shortInstrumentName = #"T"
+        \set Staff.midiInstrument = #"Trumpet"
         bf1\p~ | bf1~ | bf1~ | bf1~ | bf1~ | bf1~ | bf1~ | bf1 |
         \scoop bf'1\mp~ | bf1~ | bf1~ | bf1~ | bf1~ | bf1~ | bf1~ | bf1 |
         \scoop a1^\( | \scoop a1 | \scoop a1 | \scoop a1\) |
