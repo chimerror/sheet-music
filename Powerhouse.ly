@@ -11,7 +11,7 @@
       (markup #:with-dimensions '(0 . 0) '(0 . 0)
               #:translate '(-0.2 . -0.5)
               #:path 0.25 '((moveto 0 0)
-                            (curveto 0 -1 -1 -1.5 -1.5 -1.5))))))
+                            (curveto -1 0 -1.5 -1 -1.5 -1.5))))))
 
 scoop = \once \override NoteHead #'stencil = #scoop-stencil
 
@@ -26,7 +26,8 @@ scoop = \once \override NoteHead #'stencil = #scoop-stencil
         \numericTimeSignature
         bf1\p~ | bf1~ | bf1~ | bf1~ | bf1~ | bf1~ | bf1~ | bf1 |
         \scoop bf'1\mp~ | bf1~ | bf1~ | bf1~ | bf1~ | bf1~ | bf1~ | bf1 |
-        \scoop a1
+        \scoop a1^\( | \scoop a1 | \scoop a1 | \scoop a1\) |
+        \scoop a2^\( \scoop a2 | \scoop a2 \scoop a2 | \scoop a2 \scoop a2 | \scoop a4\) r2. | \bar "||"
       }
     }
   >>
