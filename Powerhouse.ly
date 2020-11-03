@@ -28,6 +28,7 @@ scoop = \once \override NoteHead #'stencil = #scoop-stencil
         \scoop bf'1\mp~ | bf1~ | bf1~ | bf1~ | bf1~ | bf1~ | bf1~ | bf1 |
         \scoop a1^\( | \scoop a1 | \scoop a1 | \scoop a1\) |
         \scoop a2^\( \scoop a2 | \scoop a2 \scoop a2 | \scoop a2 \scoop a2 | \scoop a4\) r2. | \bar "||"
+        d,8^\markup \circle { { A } }
       }
     }
   >>
