@@ -40,7 +40,7 @@ scoop = \once \override NoteHead #'stencil = #scoop-stencil
         d8( ef d ef) e( f e f) | g8( af g af) b( c b c) |
         g8( af g af) e( f e f) | d8( ef) r2. |
         d8( ef d ef) e( f e f) | g8( af g af) b( c b c) |
-        f4\staccato r8 b,8\staccato r4 c4\staccato | r4 gs4\staccato a\staccato f\staccato |
+        f4\staccato r8 b,8\staccato r4 c4\staccato | r4 gs4\staccato a\staccato f\staccato | \bar "||"
       }
     }
   >>
