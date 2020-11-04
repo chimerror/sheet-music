@@ -10,8 +10,8 @@
     (grob-interpret-markup grob
       (markup #:with-dimensions '(0 . 0) '(0 . 0)
               #:translate '(-0.2 . -0.5)
-              #:path 0.25 '((moveto 0 0)
-                            (curveto -1 0 -1.5 -1 -1.5 -1.5))))))
+              #:path 0.25 '((moveto 0 0.5)
+                            (curveto -1 0 -1.5 -1 -1.5 -2))))))
 
 scoop = \once \override NoteHead #'stencil = #scoop-stencil
 
@@ -40,6 +40,19 @@ scoop = \once \override NoteHead #'stencil = #scoop-stencil
         d8( ef d ef) e( f e f) | g8( af g af) b( c b c) |
         g8( af g af) e( f e f) | d8( ef) r2. |
         d8( ef d ef) e( f e f) | g8( af g af) b( c b c) |
+        f4\staccato r8 b,8\staccato r4 c4\staccato | r4 gs4\staccato a\staccato f\staccato | \bar "||"
+
+        bf1\p^\markup \circle { { B } }~ | bf1~ |
+        bf1~ | bf1 |
+        \scoop bf1 | \scoop bf1 |
+        \scoop bf2 \scoop bf2 | \scoop bf2 \scoop bf2 |
+        d,8( ef d ef) e(f e f) | g8( af g af) b(c b c) |
+        g8( af g af) e( f e f) | d8( ef) r2. |
+        d8( ef d ef) e(f e f) | g8( af g af) b(c b c) |
+        f4\staccato r8 b,8\staccato r4 c4\staccato | r4 gs4\staccato a\staccato f\staccato |
+        d8( ef d ef) e(f e f) | g8( af g af) b(c b c) |
+        g8( af g af) e( f e f) | d8( ef) r2. |
+        d8( ef d ef) e(f e f) | g8( af g af) b(c b c) |
         f4\staccato r8 b,8\staccato r4 c4\staccato | r4 gs4\staccato a\staccato f\staccato | \bar "||"
       }
     }
