@@ -27,11 +27,20 @@ scoop = \once \override NoteHead #'stencil = #scoop-stencil
         \set Staff.instrumentName = #"Trumpet"
         \set Staff.shortInstrumentName = #"T"
         \set Staff.midiInstrument = #"Trumpet"
+
         bf1\p~ | bf1~ | bf1~ | bf1~ | bf1~ | bf1~ | bf1~ | bf1 |
         \scoop bf'1\mp~ | bf1~ | bf1~ | bf1~ | bf1~ | bf1~ | bf1~ | bf1 |
         \scoop a1^\( | \scoop a1 | \scoop a1 | \scoop a1\) |
         \scoop a2^\( \scoop a2 | \scoop a2 \scoop a2 | \scoop a2 \scoop a2 | \scoop a4\) r2. | \bar "||"
-        d,8^\markup \circle { { A } }
+        
+        d,8^\markup \circle { { A } }( ef d ef) e( f e f) | g8( af g af) b( c b c) |
+        g8( af g af) e( f e f) | d8( ef) r2. |
+        d8( ef d ef) e( f e f) | g8( af g af) b( c b c) |
+        f4\staccato r8 b,8\staccato r4 c4\staccato | r4 gs4\staccato a\staccato f\staccato |
+        d8( ef d ef) e( f e f) | g8( af g af) b( c b c) |
+        g8( af g af) e( f e f) | d8( ef) r2. |
+        d8( ef d ef) e( f e f) | g8( af g af) b( c b c) |
+        f4\staccato r8 b,8\staccato r4 c4\staccato | r4 gs4\staccato a\staccato f\staccato |
       }
     }
   >>
