@@ -46,7 +46,7 @@ scoop = \once \override NoteHead #'stencil = #scoop-stencil
         bf1~ | bf1 |
         \scoop bf1 | \scoop bf1 |
         \scoop bf2 \scoop bf2 | \scoop bf2 \scoop bf2 |
-        d,8( ef d ef) e(f e f) | g8( af g af) b(c b c) |
+        d,8\f( ef d ef) e(f e f) | g8( af g af) b(c b c) |
         g8( af g af) e( f e f) | d8( ef) r2. |
         d8( ef d ef) e(f e f) | g8( af g af) b(c b c) |
         f4\staccato r8 b,8\staccato r4 c4\staccato | r4 gs4\staccato a\staccato f\staccato |
@@ -54,6 +54,12 @@ scoop = \once \override NoteHead #'stencil = #scoop-stencil
         g8( af g af) e( f e f) | d8( ef) r2. |
         d8( ef d ef) e(f e f) | g8( af g af) b(c b c) |
         f4\staccato r8 b,8\staccato r4 c4\staccato | r4 gs4\staccato a\staccato f\staccato | \bar "||"
+
+        f1\p^\markup \circle { { C } }\( | af1 | b1 | ds1\) |
+        f,1\( | af1 | b1 | ds1\)
+        af1\( | bf1 | d1 | f1\)
+        df1\mf\( | c1 | b1 | bf1 |
+        a1 | af1 | g1~ | g4\) r2. | \bar "||"
       }
     }
   >>
