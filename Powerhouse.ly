@@ -57,9 +57,9 @@ scoop = \once \override NoteHead #'stencil = #scoop-stencil
 
         f1\p^\markup \circle { { C } }\( | af1 | b1 | ds1\) |
         f,1\( | af1 | b1 | ds1\)
-        af1\( | bf1 | d1 | f1\)
-        df1\mf\( | c1 | b1 | bf1 |
-        a1 | af1 | g1~ | g4\) r2. | \bar "||"
+        af1\( | bf1 | d1\< | f1\)
+        df1\!\mf\( | c1 | b1 | bf1 |
+        a1\> | af1 | g1~ | g4\) r2.\! | \bar "||"
       }
     }
   >>
