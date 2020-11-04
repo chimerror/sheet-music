@@ -33,7 +33,7 @@ scoop = \once \override NoteHead #'stencil = #scoop-stencil
         \scoop a1^\( | \scoop a1 | \scoop a1 | \scoop a1\) |
         \scoop a2^\( \scoop a2 | \scoop a2 \scoop a2 | \scoop a2 \scoop a2 | \scoop a4\) r2. | \bar "||"
         
-        d,8^\markup \circle { { A } }( ef d ef) e( f e f) | g8( af g af) b( c b c) |
+        d,8\f^\markup \circle { { A } }( ef d ef) e( f e f) | g8( af g af) b( c b c) |
         g8( af g af) e( f e f) | d8( ef) r2. |
         d8( ef d ef) e( f e f) | g8( af g af) b( c b c) |
         f4\staccato r8 b,8\staccato r4 c4\staccato | r4 gs4\staccato a\staccato f\staccato |
@@ -60,8 +60,28 @@ scoop = \once \override NoteHead #'stencil = #scoop-stencil
         af1\( | bf1 | d1\< | f1\)
         df1\!\mf\( | c1 | b1 | bf1 |
         a1\> | af1 | g1~ | g4\) r2.\! | \bar "||"
+
+        d8\f^\markup \circle { { D } }( ef d ef) e( f e f) | g8( af g af) b( c b c) |
+        g8( af g af) e( f e f) | d8( ef) r2. |
+        d8( ef d ef) e( f e f) | g8( af g af) b( c b c) |
+        f4\staccato r8 b,8\staccato r4 c4\staccato | r4 gs4\staccato a\staccato f\staccato |
+        d8( ef d ef) e( f e f) | g8( af g af) b( c b c) |
+        g8( af g af) e( f e f) | d8( ef) r2. |
+        d8( ef d ef) e( f e f) | g8( af g af) b( c b c) |
+        f4\staccato r8 b,8\staccato r4 c4\staccato | r4 gs4\staccato a\staccato f\staccato | \bar "||"
       }
     }
+  \new Staff = "Clarinet" {
+    \relative c' {
+      \transposition bf
+      \key f \major
+      \numericTimeSignature
+      \set Staff.instrumentName = #"Clarinet"
+      \set Staff.shortInstrumentName = #"C"
+      \set Staff.midiInstrument = #"Clarinet"
+      
+    }
+  }
   >>
   \layout {}
   \midi {}
